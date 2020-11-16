@@ -4,7 +4,7 @@ from requests import get
 hostname=socket.gethostname()
 local_ip=socket.gethostbyname(hostname)
 ip_v4_public_ip=get('https://api.ipify.org').text
-ip_v6_public_ip=get('https://api64.ipify.org').text
+ip_v6_public_ip=get('https://api64.ipify.org?format=json').text
 
 print(f'Hostname: {hostname}')
 print(f'Local IP: {local_ip}')
