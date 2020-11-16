@@ -1,0 +1,1 @@
+This is a script used to find your local and public IP addresses
